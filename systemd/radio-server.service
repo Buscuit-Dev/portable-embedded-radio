@@ -1,0 +1,12 @@
+[Unit]
+Description=Radio Upload Server
+After=network.target
+
+[Service]
+User=radio
+WorkingDirectory=/home/radio
+ExecStart=/usr/bin/python3 /home/radio/server.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

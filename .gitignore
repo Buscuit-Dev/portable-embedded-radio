@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.log
+music/
+*.mp3
+.env

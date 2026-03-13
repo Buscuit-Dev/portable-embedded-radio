@@ -1,0 +1,12 @@
+[Unit]
+Description=Single-Button Radio
+After=network.target
+
+[Service]
+User=radio
+WorkingDirectory=/home/radio
+ExecStart=/usr/bin/python3 /home/radio/radio.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
